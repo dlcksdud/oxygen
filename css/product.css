@@ -2,48 +2,123 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
 }
-
-header {
-    background-color: #2b3d52;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
+a {
     text-decoration: none;
-    font-weight: bold;
+    color: #2b3d52;
+}
+li {
+    list-style: none;
+}
+/* container */
+.ll {
+    background-image: url('../images/product_background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    height: 150px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px;
+}
+
+.dropdown {
+    color: white;
+    font-size: 17px;
+    position: relative; 
+}
+
+.dropdown::before {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    height: 2px; 
+    background-color: white; 
+    transform: scaleX(0); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+.dropdown:hover::before {
+    transform: scaleX(1); 
+}
+.dropdown:hover {
+    cursor: pointer;
+}
+/* main */
 main {
     padding: 20px;
     text-align: center;
 }
 
+.title {
+    font-size: 30px;
+    color: #2b3d52;
+    margin-bottom: 0px;
+}
+
 section {
-    margin-bottom: 20px;
-    background: #bad2ee;
+    margin-bottom: 40px;
+    background: #c8def691;
     padding: 20px;
     border-radius: 8px;
 }
 
+.imdae {
+    font-size: 18px;
+    font-weight: 500;
+    background: #2a66ff;
+    padding: 15px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.imdae:hover {
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);;
+}
+.imdae .button {
+    color: white;
+}
+
+#images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+    /* font-size: 17px; */
+}
+img {
+    width: 600px;
+    margin-top: 50px;
+}
+/* bottom section */
+#contact {
+    background: none;
+    border-top: 1px solid gainsboro;
+}
+.phone_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone_box .phone_img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    margin: 0px 7px 0px 0px;
+}
+.phone_box .kakao_img {
+    width: 24px;
+    height: 24px;
+}
+
+/* footer */
 footer {
     background-color: #333;
     color: white;
@@ -52,11 +127,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-img {
-    width: 600px;
-}
-#images {
-    display: flex;
 }

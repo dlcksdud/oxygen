@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'header_font';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 .custom_font {
+  font-family: 'header_font';
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+  width: 85%;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px;
+}
+h1 .header_small {
+  font-size: 15px;
+  color: rgb(159, 159, 159);
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+header h1 a {
+  color: #2b3d52;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 70px;
+}
+
+nav ul li a {
+  color: #2b3d52;
+  text-decoration: none;
+  font-weight: 500;
+}

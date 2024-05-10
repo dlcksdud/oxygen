@@ -2,47 +2,153 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
 }
-
-header {
-    background-color: #2b3d52;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
+a {
     text-decoration: none;
-    font-weight: bold;
+    color: #2b3d52;
+}
+li {
+    list-style: none;
+}
+/* navigation */
+.ll {
+    background-image: url('../images/product_background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    height: 150px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px;
+}
+
+.dropdown {
+    color: white;
+    font-size: 17px;
+    position: relative; 
+}
+
+.dropdown::before {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    height: 2px; 
+    background-color: white; 
+    transform: scaleX(0); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+.dropdown:hover::before {
+    transform: scaleX(1); 
+}
+.dropdown:hover {
+    cursor: pointer;
 }
 
 main {
     padding: 20px;
     text-align: center;
 }
-
+/* section */
 section {
     margin-bottom: 20px;
-    background: #bcd3ec;
+    /* border-top: 1px solid gainsboro; */
+    /* background: #c8def691; */
+    background: #c8def65c;
     padding: 20px;
     border-radius: 8px;
 }
+/* ======== 처방전 section ======================= */
+.consul_image{
+    width: 500px;
+    margin-top: 30px;
+}
+.container_process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: 80px;
+    position: relative;
+}
+
+.circle_box {
+    flex: 1 0 calc(16.666% - 20px);
+    /* margin: 10px; */
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    /* background: white; */
+    background: #2b3d52;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.circle_text {
+    /* color: #2b3d52; */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    color: #2b3d52;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+    /* text-align: justify; */
+    width: 89%;
+    margin: 30px auto; /* 위아래에 10px의 간격을 주고 가운데 정렬을 유지합니다. */
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 17%;
+    left: 95%; 
+}
+
+/* 준비 서류 ===================== */
+h4 {
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+/* bottom_section */
+#contact {
+    background: none;
+    border-top: 1px solid gainsboro;
+}
+.phone_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone_box .phone_img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    margin: 0px 7px 0px 0px;
+}
+.phone_box .kakao_img {
+    width: 24px;
+    height: 24px;
+}
+
 
 footer {
     background-color: #333;
